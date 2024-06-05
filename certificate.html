@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="cssfiles/style3.css">
+    <!-- <script src="function.js"></script>
+    -->
+    
+</head>
+<body bgcolor=" #e5e7e9 " >
+    <br>
+    <div style="text-align: center;"><img src="im2.png" alt="" width="40px"></div>
+    <h2 >KERALA BLOCKCHAIN ACADEMY</h2>
+    <div class="d1">
+    <br>
+    <img src="image.jpg" class="im1" alt="">
+    <br><br>
+    <p > This is to certify that <span id="id1" style="font-weight: bold;"></span>  
+        has  successfully <br> completed<span id="id2" style="font-weight: bold;"></span><br>
+        course with <span id="id3" style="font-weight: bold;"></span> grade and the Certificate id is <span id="id4" style="font-weight: bold;"></span>
+    with issue date<span id="id5" style="font-weight: bold;"></span></p>
+    </div>
+    
+    <script>
+    
+        let a=localStorage.getItem("COURSE");
+        let b=localStorage.getItem("ID");
+        console.log(b);
+        let c=localStorage.getItem("NAME");
+        let d=localStorage.getItem("GRADE");
+        let e=localStorage.getItem("DATE");
+
+        
+        document.getElementById("id1").innerHTML=c;
+        document.getElementById("id2").innerHTML=a;
+        document.getElementById("id3").innerHTML=d;
+        document.getElementById("id4").innerHTML=b;
+        document.getElementById("id5").innerHTML=e;
+
+    
+    </script>
+</body>
+</html>
